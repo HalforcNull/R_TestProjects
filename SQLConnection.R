@@ -8,7 +8,7 @@ library(RODBC)
 cat("\014") 
 
 
-dbConnection <- odbcDriverConnect("driver={SQL Server}; server=127.0.0.1; database=Demo; uid=RServerUser; pwd=RServerUser123")
+dbConnection <- odbcDriverConnect("driver={SQL Server}; server=192.168.1.160; database=Demo; uid=RServerUser; pwd=RServerUser123")
 
 
 
