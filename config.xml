@@ -1,0 +1,13 @@
+<!-- XMLReader data file -->
+
+<settings>
+  <testLoad>
+    heres test load function
+  </testLoad>
+  
+  <testPop>
+    <description>test pop is a nested data</description>
+    <content>here is content</content>
+  </testPop>
+</settings>
+
