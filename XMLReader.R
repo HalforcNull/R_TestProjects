@@ -9,10 +9,10 @@ doc <- xmlParse("config.xml")
 
 
 #the following provide the inner text of given xpath (a list of char)
-listOfChar <- xpathApply(doc, "//settings/testLoad", xmlValue)
+listOfChar <- xpathApply(doc, "//settings/testLoad")
 
 #this transfer list of char to string
-contentStr = paste( listOfChar[1]) 
+contentStr =  gsub("^\\s+|\\s+$","", paste( listOfChar[1]))
 
 #this remove all newline symbol and return symbol
-e =gsub("[\r\n]","",t)
+#e =gsub("[\r\n]","",t)
